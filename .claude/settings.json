@@ -1,0 +1,57 @@
+{
+  "mcpServers": {
+    "shadcn": {
+      "type": "http",
+      "url": "https://www.shadcn.io/api/mcp"
+    },
+    "next-devtools": {
+      "command": "npx",
+      "args": ["next-devtools-mcp@latest"]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["@anthropic-ai/playwright-mcp@latest"]
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["context7-mcp@latest"]
+    },
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/"
+    },
+    "drizzle-mcp": {
+      "command": "npx",
+      "args": ["drizzle-mcp"]
+    }
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/biome-format.sh"
+          }
+        ]
+      }
+    ]
+  },
+  "extraKnownMarketplaces": {
+    "storm-claude-marketplace": {
+      "source": {
+        "source": "git",
+        "url": "git@github.com:SmidigStorm/storm-claude-marketplace.git"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "pm-vision@storm-claude-marketplace": true,
+    "pm-architecture@storm-claude-marketplace": true,
+    "pm-domain-knowledge@storm-claude-marketplace": true,
+    "pm-prioritization@storm-claude-marketplace": true,
+    "pm-requirements@storm-claude-marketplace": true,
+    "pm-planning@storm-claude-marketplace": true
+  }
+}
