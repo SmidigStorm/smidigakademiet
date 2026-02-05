@@ -1,30 +1,5 @@
 {
-  "mcpServers": {
-    "shadcn": {
-      "type": "http",
-      "url": "https://www.shadcn.io/api/mcp"
-    },
-    "next-devtools": {
-      "command": "npx",
-      "args": ["next-devtools-mcp@latest"]
-    },
-    "playwright": {
-      "command": "npx",
-      "args": ["@anthropic-ai/playwright-mcp@latest"]
-    },
-    "context7": {
-      "command": "npx",
-      "args": ["context7-mcp@latest"]
-    },
-    "github": {
-      "type": "http",
-      "url": "https://api.githubcopilot.com/mcp/"
-    },
-    "drizzle-mcp": {
-      "command": "npx",
-      "args": ["drizzle-mcp"]
-    }
-  },
+  "mcpServers": {},
   "hooks": {
     "PostToolUse": [
       {
