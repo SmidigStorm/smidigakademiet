@@ -63,6 +63,7 @@
 - **Biome** — Linting and formatting (single fast tool, replaces ESLint + Prettier)
 - **Vitest** — Unit and integration testing
 - **Playwright** — End-to-end browser testing
+- **playwright-bdd** — BDD layer for Playwright using Gherkin `.feature` files. Requirements are written as `.feature` specs before implementation and run as automated E2E tests
 - **PostCSS** 8.5.3 + **Autoprefixer** 10.4.21
 - **dotenv** 16.5.0 — Environment variable loading
 

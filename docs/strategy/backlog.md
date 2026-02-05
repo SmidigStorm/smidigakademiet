@@ -2,7 +2,7 @@
 
 | # | Title | Type | Status | Description |
 |---|-------|------|--------|-------------|
-| 1 | Set up Biome + Vitest + Playwright | Tech Debt | backlog | Dev tooling foundation — linting, formatting, unit tests, and end-to-end tests |
+| 1 | Set up Biome + Vitest + Playwright + playwright-bdd | Tech Debt | backlog | Dev tooling foundation — linting, formatting, unit tests, and BDD-driven end-to-end tests with Gherkin .feature files |
 | 2 | Landing page | Feature | backlog | Clear value proposition, social proof, and calls to action that drive contact and sign-ups |
 | 3 | Services page | Feature | backlog | Overview of what Storm offers — tailored classes, scheduled open classes, and consulting |
 | 4 | About Storm page | Feature | backlog | Build trust and credibility through Storm's background, approach, and personality |
